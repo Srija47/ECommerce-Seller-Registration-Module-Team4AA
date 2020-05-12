@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AccountService</name>
+    </assembly>
+    <members>
+        <member name="M:AccountService.Controllers.AccountController.SellerRegisterAsync(AccountService.Models.Seller)">
+             <summary>
+             Creates a New Seller.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /SellerRegister
+                 {
+                    "id": 1,
+                    "name": "seller1",
+                    "isComplete": true
+                 }
+            
+             </remarks>
+             <param name="seller"></param>
+             <returns>A newly created SellerRegister</returns>
+             <response code="201">Returns the newly created seller</response>
+             <response code="400">If the seller is null</response>            
+        </member>
+        <member name="M:AccountService.Controllers.AccountController.SellerLoginAsync(System.String,System.String)">
+            <summary>
+            Login as a specific User.
+            </summary>
+            <param name="uname"></param> 
+            <param name="pwd"></param>
+        </member>
+        <member name="M:AccountService.Repositories.AccountRepository.SellerRegister(AccountService.Models.Seller)">
+            <summary>
+            To Add new seller to Seller table in SellerDb database
+            </summary>
+            <param name="seller"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AccountService.Repositories.AccountRepository.ValidateSeller(System.String,System.String)">
+            <summary>
+            To Check Paticular user is there or not
+            </summary>
+            <param name="uname"></param> 
+            <param name="pwd"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

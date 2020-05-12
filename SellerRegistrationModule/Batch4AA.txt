@@ -1,0 +1,9 @@
+TeamName	:	Team4AA
+
+TeamMembers	:	844866	Srija Arigela
+			845164	Teki Kalyani
+			845165	Katragadda Sumanthi Dath
+			845163	Suma Bade
+
+ModuleName	:	Ecommerce:Seller Registration Module
+

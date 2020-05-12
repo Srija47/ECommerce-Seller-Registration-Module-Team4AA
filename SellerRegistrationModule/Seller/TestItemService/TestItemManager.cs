@@ -1,0 +1,7 @@
+﻿
+namespace TestItemService
+{
+    class TestItemManager
+    {
+    }
+}
